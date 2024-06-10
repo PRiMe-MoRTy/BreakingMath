@@ -264,9 +264,9 @@
         android:id="@+id/btnlogout"
         android:layout_width="140dp"
         android:layout_height="60dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:height="60dp"
         android:text="Log out"
         android:textSize="16sp"
-        android:height="60dp"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

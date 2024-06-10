@@ -40,7 +40,8 @@ class MainActivity : AppCompatActivity() {
                 }
             var sp = getSharedPreferences("TY", Context.MODE_PRIVATE)
         if (sp.getString("TY", "-9") != "-9") {
-            startActivity(Intent(this, MainActivity2::class.java))}
+            startActivity(Intent(this, MainActivity2::class.java))
+        }
             var signuptext: TextView = findViewById(R.id.tvSignIn)
             signuptext.setOnClickListener {
                 var intent = Intent(this, SignUp::class.java)
