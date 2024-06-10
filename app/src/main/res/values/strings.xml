@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Breaking Math</string>
+    <string name="button_continue">Continue</string>
+    <string name="title_great">Great!</string>
+    <string name="button_skip">Skip</string>
+    <string name="Wrong">Incorrect!</string>
+</resources>

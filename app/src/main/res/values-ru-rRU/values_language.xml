@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="button_continue">Продолжить</string>
+    <string name="title_great">Превосходно!</string>
+    <string name="button_skip">Пропустить</string>
+    <string name="Wrong">Неверно</string>
+</resources>

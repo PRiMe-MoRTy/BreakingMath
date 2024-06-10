@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="correct_answer">#0EAD69</color>
+    <color name="wrong_answer">#CC0303</color>
+
+
+</resources>
