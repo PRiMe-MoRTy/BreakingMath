@@ -21,16 +21,18 @@ class MainActivity2 : AppCompatActivity() {
         setContentView(R.layout.activity_easy_lvl)
         var sp = getSharedPreferences("SP", Context.MODE_PRIVATE)
         sp.edit().putString("TY", "9").commit()
-        _binding = ActivityEasyLvlBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-        val trainer = MathTrain()
-        showNextQuestion(trainer)
         var logout:Button = findViewById(R.id.btnlogout)
         logout.setOnClickListener{
             sp.edit().putString("TY", "-9").commit()
             Toast.makeText(this, "Вы вышли из аккаунта", Toast.LENGTH_LONG).show()
             startActivity(Intent(this, MainActivity::class.java))
         }
+
+        _binding = ActivityEasyLvlBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        val trainer = MathTrain()
+        showNextQuestion(trainer)
+
         with(binding){
             btnContinue.setOnClickListener {
                 layoutResult.isVisible = false

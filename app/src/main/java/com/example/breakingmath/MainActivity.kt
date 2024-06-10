@@ -24,12 +24,12 @@ class MainActivity : AppCompatActivity() {
                 .get()
                 .addOnSuccessListener { result ->
                     for (document in result) {
-                        if (document.getString("email")==email.text){
-                            if (document.getString("pass")==password.text){
+                        if (document.getString("email")==email.text.toString()){
+                            if (document.getString("password")==password.text.toString()){
                                 sp.edit().putString("Email", email.text.toString()).commit()
                                 startActivity(Intent(this, MainActivity2::class.java))
                             }
-                            else if (document.getString("pass")==password.text){
+                            else if (document.getString("password")==password.text){
                                 password.text = ""
                             }
                         }

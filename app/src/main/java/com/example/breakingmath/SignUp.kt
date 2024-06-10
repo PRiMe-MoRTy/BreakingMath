@@ -30,7 +30,7 @@ class SignUp : AppCompatActivity() {
 
                 val user = hashMapOf(
                     "email" to email.text.toString(),
-                    "pass" to password.text.toString()
+                    "password" to password.text.toString()
                 )
 
                 db.collection("users")
