@@ -3,7 +3,6 @@ package com.example.breakingmath
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import android.widget.ImageButton
 import android.widget.LinearLayout
 import android.widget.TextView
@@ -22,8 +21,8 @@ class MainActivity2 : AppCompatActivity() {
         setContentView(R.layout.activity_easy_lvl)
         var sp = getSharedPreferences("SP", Context.MODE_PRIVATE)
         sp.edit().putString("TY", "9").commit()
-        var logout:ImageButton = findViewById(R.id.ibclose)
-        logout.setOnClickListener{
+        var ibclose:ImageButton = findViewById(R.id.ibclose)
+        ibclose.setOnClickListener{
             sp.edit().putString("TY", "-9").commit()
             Toast.makeText(this, "Вы вышли из аккаунта", Toast.LENGTH_LONG).show()
             startActivity(Intent(this, MainActivity::class.java))
