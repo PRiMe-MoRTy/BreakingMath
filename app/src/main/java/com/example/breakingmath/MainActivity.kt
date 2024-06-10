@@ -17,8 +17,8 @@ class MainActivity : AppCompatActivity() {
         var email: TextView = findViewById(R.id.email)
         var password: TextView = findViewById(R.id.password)
         var btn: ConstraintLayout = findViewById(R.id.btnSignIn)
-        var sp = getSharedPreferences("TY", Context.MODE_PRIVATE)
         var db = Firebase.firestore
+        var sp = getSharedPreferences("TY", Context.MODE_PRIVATE)
         btn.setOnClickListener {
             db.collection("users")
                 .get()

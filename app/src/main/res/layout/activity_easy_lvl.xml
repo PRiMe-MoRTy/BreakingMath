@@ -7,7 +7,7 @@
     android:orientation="vertical">
 
     <ImageButton
-        android:id="@+id/ibClose"
+        android:id="@+id/ibclose"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -31,7 +31,7 @@
         android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ibClose"
+        app:layout_constraintTop_toBottomOf="@+id/ibclose"
         tools:ignore="HardcodedText" />
 
     <LinearLayout
@@ -259,14 +259,4 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <Button
-        android:id="@+id/btnlogout"
-        android:layout_width="140dp"
-        android:layout_height="60dp"
-        android:height="60dp"
-        android:text="Log out"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
